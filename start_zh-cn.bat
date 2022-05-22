@@ -1,6 +1,6 @@
 @echo off
-title cmdid提取工具 1.0.1 
-echo. 版本：1.0.1
+title cmdid提取工具 1.0.2
+echo. 版本：1.0.2
 echo. 开发者：umaru
 echo. 构建日期：May 22, 2022
 echo. 欢迎使用cmdid提取工具。
@@ -18,8 +18,10 @@ if %choose_format%==2 goto :grasscutter
 rem 
 node getcmdids_pancake_zh-cn.ts
 pause
+.\packetIds.json
 exit
 :grasscutter
-node getcmdids_grasscutter_zh-cn.js
+node getcmdids_grasscutter_zh-cn.ts
 pause
+.\PacketOpcodes.java
 exit

@@ -9,12 +9,14 @@ function getCmdids() {
     const content = fs.readFileSync(protoPath + file, 'utf-8');
     const cmdId = content.match(/CMD_ID = (\d+);/);
     if (cmdId) {
-      protoStr += `"${cmdId[1]}": "${file.replace('.proto', '')}",\n`;
+      protoStr += `   "${cmdId[1]}": "${file.replace('.proto', '')}",\n`;
     }
   })
-  fs.writeFileSync('./packetIds.json', protoStr);
+  fs.writeFileSync('./packetIds.json', '{\n','utf-8');
+  fs.appendFileSync('./packetIds.json', protoStr);
+  const appendFileContent = '}';
+  fs.appendFileSync('./packetIds.json', appendFileContent, 'utf-8');
 }
 getCmdids();
 console.log('操作成功完成。请查看./packetIds.json。');
-
 
