@@ -1,6 +1,8 @@
 [EN](README.MD)|中文
-## CMDIDS提取工具
+## JS转TS
+额，貌似没多大变化？
 
+## CMDIDS提取工具
 这是Genshin Impact的CMDIDS提取工具。
 
 警告：请放入所有proto文件`/proto`目录，否则该工具将不会运行。
