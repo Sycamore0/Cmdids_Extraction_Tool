@@ -11,14 +11,14 @@ goto menu
 :menu
 echo.[1] Pancake format 
 echo.[2] Grasscutter format
-echo.[3] ÖÐÎÄ
+echo.[3] start_zh-cn
 set /p choose_format=Please press 1, 2 or 3 
 if %choose_format%==1 goto :pancake
 if %choose_format%==2 goto :grasscutter
 if %choose_format%==3 goto :start_zh-cn
 :pancake
 rem 
-node getcmdids_pancake.js
+node getcmdids_pancake.ts
 pause
 exit
 :grasscutter
