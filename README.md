@@ -1,5 +1,6 @@
 EN|[中文](README_zh-cn.md)
-
+# JS to TS
+Well,maybe it is useless.
 # Cmdids Extraction Tool
 This is a Genshin cmdids Extraction Tool.  
 Warning: Please put all proto files in./proto/ directory, otherwise the tool will not run.  
